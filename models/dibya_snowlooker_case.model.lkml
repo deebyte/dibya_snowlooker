@@ -173,8 +173,3 @@ explore: users{
     relationship: one_to_one
   }
   }
-
-
-explore: user_order {}
-
-explore: average_calculation {}
