@@ -234,35 +234,35 @@ measure: percent_of_total_revenue {
     sql: ${sale_price} ;;
   }
 
-  # parameter: metric_selector {
-  #   type: string
-  #   allowed_value: {
-  #     label: "Total Revenue"
-  #     value: "total_gross_revenue"
-  #   }
-  #   allowed_value: {
-  #     label: "Average Sale Price"
-  #     value: "average_sale_price"
-  #   }
-  #   allowed_value: {
-  #     label: "Average Spend Per Customer"
-  #     value: "average_spend_per_customer"
-  #   }
-  #   allowed_value: {
-  #     label: "Item Return Rate"
-  #     value: "item_return_rate"
-  #   }
-  # }
+  parameter: metric_selector {
+    type: string
+    allowed_value: {
+      label: "Total Revenue"
+      value: "total_gross_revenue"
+    }
+    allowed_value: {
+      label: "Average Sale Price"
+      value: "average_sale_price"
+    }
+    allowed_value: {
+      label: "Average Spend Per Customer"
+      value: "average_spend_per_customer"
+    }
+    allowed_value: {
+      label: "Item Return Rate"
+      value: "item_return_rate"
+    }
+  }
 
-  # measure: metric {
-  #   label_from_parameter: metric_selector
-  #   type: number
-  #   value_format: "[<1]0.0000%;[>1]$0.00"
-  #   sql: case when {% parameter metric_selector %} = 'total_gross_revenue' then ${total_gross_revenue}
-  #             when {% parameter metric_selector %} = 'average_sale_price' then ${average_sale_price}
-  #             when {% parameter metric_selector %} = 'average_spend_per_customer' then ${average_spend_per_customer}
-  #             when {% parameter metric_selector %} = 'item_return_rate' then ${item_return_rate};;
-  # }
+  measure: metric {
+    label_from_parameter: metric_selector
+    type: number
+    value_format: "[<1]0.0000%;[>1]$0.00"
+    sql: case when {% parameter metric_selector %} = 'total_gross_revenue' then ${total_gross_revenue}
+              when {% parameter metric_selector %} = 'average_sale_price' then ${average_sale_price}
+              when {% parameter metric_selector %} = 'average_spend_per_customer' then ${average_spend_per_customer}
+              when {% parameter metric_selector %} = 'item_return_rate' then ${item_return_rate};;
+  }
 
 
 
