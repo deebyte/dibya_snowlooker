@@ -68,40 +68,6 @@ explore: inventory_items {
 #   #   relationship: many_to_one
 #   # }
 
-#   join: products {
-#     type: left_outer
-#     sql_on: ${inventory_items.product_id} = ${products.id} ;;
-#     relationship: many_to_one
-#   }
-
-#   join: distribution_centers {
-#     type: left_outer
-#     sql_on: ${products.distribution_center_id} = ${distribution_centers.id} ;;
-#     relationship: many_to_one
-#   }
-
-#   # join: dt_order_revenue {
-#   #   type: left_outer
-#   #   view_label: "Users"
-#   #   sql_on: ${order_items.order_id} = ${dt_order_revenue.order_id} ;;
-#   #   relationship: one_to_one
-#   # }
-
-
-#   join: dt_order_date {
-#     type: left_outer
-#     sql_on: ${order_items.order_id} = ${dt_order_date.order_id} ;;
-#     relationship: one_to_one
-#   }
-
-#   join: user_order_inventory {
-#   #   type: left_outer
-#   #   view_label: "Users average spending"
-#   #   sql_on: ${order_items.order_id} = ${dt_average_spend_customer.order_id} ;;
-#   #   relationship: one_to_one
-#     sql:  ;;
-#     relationship: one_to_one
-#   }
 
 #   join: dt_top_ranking {
 #     view_label: "TOTT - Top N Ranking"
