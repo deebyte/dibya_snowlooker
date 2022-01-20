@@ -1,14 +1,14 @@
 ---
-title: Issues - 47⛔ 163⚠️  
+title: Issues - 48⛔ 164⚠️  
 navigation: true
 ---
 
 <p style="text-align:right;color:#cccs">
-Generated Thu, 20 Jan 2022 19:32:59 GMT
+Generated Thu, 20 Jan 2022 19:58:02 GMT
 </p>
 
 <details style="margin-left: 3em" open="open">
-<summary style="margin-left:-1em;border-bottom:solid 1px #333;font-size:200%;">Issues (47⛔163⚠️)</summary>
+<summary style="margin-left:-1em;border-bottom:solid 1px #333;font-size:200%;">Issues (48⛔164⚠️)</summary>
 
 <details style="margin-left: 3em" open="open">
 <summary style="margin-left:-1em;border-bottom:solid 1px #333;font-size:170%;"><a href="https://looker-open-source.github.io/look-at-me-sideways/rules.html#e2">E2</a>. Primary keys used (12⛔)</summary>
@@ -141,7 +141,7 @@ Generated Thu, 20 Jan 2022 19:32:59 GMT
 <td>view:dt_top_ranking/field:undefined contains a field-level view_label " TOTT | Top N Ranking"</td>
 </tr></tbody></table></details>
 <details style="margin-left: 3em" open="open">
-<summary style="margin-left:-1em;border-bottom:solid 1px #333;font-size:170%;"><a href="https://looker-open-source.github.io/look-at-me-sideways/rules.html#f3">F3</a>. Count fields filtered (12⛔)</summary>
+<summary style="margin-left:-1em;border-bottom:solid 1px #333;font-size:170%;"><a href="https://looker-open-source.github.io/look-at-me-sideways/rules.html#f3">F3</a>. Count fields filtered (13⛔)</summary>
 
 <table>
 <thead><tr>
@@ -154,6 +154,11 @@ Generated Thu, 20 Jan 2022 19:32:59 GMT
 <td>⛔</td>
 <td>view:average_calculation&#47;field:count </td>
 <td>Type:count measure at view:average_calculation/field:count does not have a filter applied</td>
+</tr>
+<tr>
+<td>⛔</td>
+<td>view:average_calculation&#47;field:count123 </td>
+<td>Type:count measure at view:average_calculation/field:count123 does not have a filter applied</td>
 </tr>
 <tr>
 <td>⛔</td>
@@ -211,7 +216,7 @@ Generated Thu, 20 Jan 2022 19:32:59 GMT
 <td>Type:count measure at view:users/field:count does not have a filter applied</td>
 </tr></tbody></table></details>
 <details style="margin-left: 3em" open="open">
-<summary style="margin-left:-1em;border-bottom:solid 1px #333;font-size:170%;"><a href="https://looker-open-source.github.io/look-at-me-sideways/rules.html#f4">F4</a>. Description or hidden (158⚠️)</summary>
+<summary style="margin-left:-1em;border-bottom:solid 1px #333;font-size:170%;"><a href="https://looker-open-source.github.io/look-at-me-sideways/rules.html#f4">F4</a>. Description or hidden (159⚠️)</summary>
 
 <table>
 <thead><tr>
@@ -254,6 +259,11 @@ Generated Thu, 20 Jan 2022 19:32:59 GMT
 <td>⚠️</td>
 <td>view:average_calculation&#47;field:average_lifetime_revenue </td>
 <td>view:average_calculation/field:average_lifetime_revenue is missing a description</td>
+</tr>
+<tr>
+<td>⚠️</td>
+<td>view:average_calculation&#47;field:count123 </td>
+<td>view:average_calculation/field:count123 is missing a description</td>
 </tr>
 <tr>
 <td>⚠️</td>
