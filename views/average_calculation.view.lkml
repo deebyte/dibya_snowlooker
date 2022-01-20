@@ -121,6 +121,10 @@ order_items.CreatedMonth]
     value_format_name: usd
     sql: ${total_lifetime_revenue}/${count_orders};;
   }
+
+  measure: count123 {
+    type: count
+  }
  }
 
 # The average number of orders that a customer places over the course of their lifetime as a customer.
