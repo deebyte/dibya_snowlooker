@@ -13,9 +13,9 @@ datagroup: dibya_snowlooker_case_default_datagroup {
 
 persist_with: dibya_snowlooker_case_default_datagroup
 
-explore: distribution_centers {}
+# explore: distribution_centers {}
 
-explore: etl_jobs {}
+# explore: etl_jobs {}
 
 explore: events {
 
